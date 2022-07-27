@@ -48,6 +48,22 @@ ol {
   cursor: pointer;
 }
 
+.btn-dezign {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  min-width: 200px;
+  color: var(--btn-clr);
+  background-color: var(--logo-clr);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px #00000026;
+}
+
 /* Links */
 .link {
   text-decoration: none;
@@ -212,21 +228,8 @@ img {
 }
 
 .hero-button {
-  padding-top: 10px;
-  padding-bottom: 10px;
   padding-right: 32px;
   padding-left: 32px;
-  min-width: 200px;
-  color: var(--btn-clr);
-  background-color: var(--logo-clr);
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: calc(30 / 16);
-  letter-spacing: 0.06em;
-  border: none;
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px 0px #00000026;
 }
 
 /* Dignity */
@@ -262,6 +265,7 @@ img {
 
 .operation-overlay-text {
   font-weight: 700;
+  line-height: calc(16 / 14);
   text-align: center;
   color: var(--btn-clr);
   text-transform: uppercase;
@@ -629,4 +633,27 @@ img {
   background-color: var(--btn-clr);
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
+}
+/* Footer form */
+
+.footer-form-input {
+  padding: 15px 16px;
+  width: 358px;
+  border: 1px solid #ffffff4d;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px #00000026;
+}
+.footer-form .placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  line-height: calc(20 / 16);
+}
+
+.footer-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 12px;
+}
+.footer-btn-icon {
+  margin-left: 10px;
 }
