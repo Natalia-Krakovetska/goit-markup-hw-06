@@ -639,6 +639,9 @@ img {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
+.modal-btn:hover .modal-btn-icon {
+  fill: #2196f3;
+}
 /* Footer form */
 
 .footer-form-input {
@@ -663,6 +666,7 @@ img {
   margin-left: 12px;
   gap: 10px;
 }
+
 .register-form-group {
   margin-bottom: 12px;
 }
@@ -689,16 +693,23 @@ img {
 .register-form-input:hover {
   border-color: var(--logo-clr);
 }
+.register-form-input:focus .register-form-icon,
+.register-form-input:hover .register-form-icon {
+  fill: var(--logo-clr);
+}
+
 .register-form-message:focus,
 .register-form-message:hover {
   border-color: var(--logo-clr);
 }
+
 .register-icon {
   fill: var(--main-txt-clr);
 }
-.register-form-input:focus .register-icon {
-  fill: var(--logo-clr);
-}
+/* .register-form-message:focus .register-icon {
+  fill: #2196f3;
+} */
+
 .register-form-message {
   height: 120px;
   resize: none;
@@ -707,9 +718,13 @@ img {
 
 .register-form-icon {
   position: absolute;
+  display: block;
   bottom: 11px;
   left: 12px;
 }
+/* .register-form-wrap:focus .register-icon {
+  fill: var(--logo-clr);
+} */
 
 .register-form-label {
   display: block;
