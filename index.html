@@ -640,12 +640,14 @@
         <div class="footer-form-field">
           <p class="socials-text">Подпишитесь на рассылку</p>
           <form autocomplete="off" class="footer-form">
-              <input
+              <label>
+                <input
               name="mailing"
               type="email"
               class="footer-form-input"
               placeholder="E-mail"
-              />
+                />
+              </label>
               <button
                 type="submit"
                 for="mail"
@@ -668,12 +670,28 @@
           </svg>
         </button>
         <strong>Оставьте свои данные, мы вам перезвоним</strong>
-        <form action=""></form>
-        <div>
-          <label for=""></label>
-          <input type="text">
-        </div>
-      </div>
+        <form class="modal-form" name="modal-form" autocomplete="off"></form>
+          <label class="modal-form-group">
+            <input type="text" name="user-name"/>
+            <span class="modal-form-label">Имя</span>
+          </label>          
+          <label class="modal-form-group">
+            <input type="text" name="user-phone"/>
+            <span class="modal-form-label">Телефон</span>
+          </label>          
+          <label class="modal-form-group">
+            <input type="email" name="user-mail"/>
+            <span class="modal-form-label">Почта</span>
+          </label>             
+            <textarea name="commets" id="" cols="30" rows="10"></textarea>
+            <span> Комментарии </span>  
+          <label class="modal-form-group">
+            <input type="checkbox">
+            <span>Соглашаюсь с рассылкой и принимаю</span>
+            <a href="">Условия договора</a>
+          </label>
+          <button type="submit" class="btn btn-dezign">Отправить</button>
+      </div>  
     </div>
     <script src="./js/modal.js"></script>
   </body>
