@@ -612,10 +612,15 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 528px;
-  height: 581px;
+  min-height: 581px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 41px;
+  padding-right: 39px;
   background-color: var(--btn-clr);
   border-radius: 4px;
   transition: transform var(--anim-fast);
+  text-align: center;
 }
 
 .modal-btn {
@@ -639,10 +644,12 @@ img {
 .footer-form-input {
   padding: 15px 16px;
   width: 358px;
+  background-color: var(--bgr-clr);
   line-height: calc(20 / 16);
   border: 1px solid #ffffff4d;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px #00000026;
+  outline: transparent;
 }
 .footer-form .placeholder {
   color: rgba(255, 255, 255, 0.6);
@@ -656,6 +663,99 @@ img {
   margin-left: 12px;
   gap: 10px;
 }
-.modal-form-group {
+.register-form-group {
+  margin-bottom: 12px;
+}
+.register-form-title {
   display: block;
+  text-align: center;
+  color: var(--main-txt-clr);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: calc(23 / 20);
+  margin-bottom: 12px;
+}
+.register-form-input,
+.register-form-message {
+  width: 100%;
+  padding: 11px 42px;
+  border: 1px solid #21212133;
+  border-radius: 4px;
+  outline: transparent;
+  cursor: pointer;
+  transition: border-color var(--anim-fast);
+}
+.register-form-input:focus,
+.register-form-input:hover {
+  border-color: var(--logo-clr);
+}
+.register-form-message:focus,
+.register-form-message:hover {
+  border-color: var(--logo-clr);
+}
+.register-icon {
+  fill: var(--main-txt-clr);
+}
+.register-form-input:focus .register-icon {
+  fill: var(--logo-clr);
+}
+.register-form-message {
+  height: 120px;
+  resize: none;
+  padding: 12px 16px;
+}
+
+.register-form-icon {
+  position: absolute;
+  bottom: 11px;
+  left: 12px;
+}
+
+.register-form-label {
+  display: block;
+  text-align: left;
+  margin-bottom: 4px;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+.register-form-agreement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: baseline;
+  gap: 7px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+.register-checkbox:checked
+  + .register-agreement-icon.register-agreement-icon-uncheck {
+  opacity: 0;
+}
+.register-agreement-icon-check {
+  opacity: 0;
+  transition: opacity var(--anim-fast);
+}
+.register-checkbox:checked
+  + .register-agreement-icon
+  .register-agreement-icon-check {
+  opacity: 1;
+}
+
+.register-form-wrap {
+  position: relative;
+  display: block;
+  margin-bottom: 28px;
+}
+.register-form-wrap:last-child {
+  margin-bottom: 0;
+}
+.register-form-agreemen-text {
+  user-select: none;
+  text-underline-position: under;
+}
+.register-form-agreemen-link {
+  color: var(--logo-clr);
+  margin-left: ;
 }
