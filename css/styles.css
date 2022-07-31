@@ -661,7 +661,8 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition: fill var(--anim-fast);
 }
-.modal-btn:hover .modal-btn-icon {
+.modal-btn:hover .modal-btn-icon,
+.modal-btn:focus .modal-btn-icon {
   fill: #2196f3;
 }
 .register-form-group {
@@ -687,7 +688,7 @@ img {
   transition: border-color var(--anim-fast);
 }
 .register-form-input:focus,
-.register-form-input:hover {
+.register-form-message:focus {
   border-color: var(--logo-clr);
 }
 .register-form-messenger::placeholder {
@@ -697,17 +698,9 @@ img {
 .register-form-icon {
   transition: fill var(--anim-fast);
 }
-
-.register-form-input:focus + .register-form-icon,
-.register-form-input:hover + .register-form-icon {
+.register-form-input:focus + .register-form-icon {
   fill: var(--logo-clr);
 }
-
-.register-form-message:focus,
-.register-form-message:hover {
-  border-color: var(--logo-clr);
-}
-
 .register-form-message {
   height: 120px;
   resize: none;
